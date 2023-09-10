@@ -23,9 +23,9 @@ body {
 }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: .5fr 4fr 2fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
 }
 
 img {
@@ -44,6 +44,8 @@ h1 {
 
 nav {
   display: flex;
+  flex-direction: row;
+  justify-content: end;
   background-color: #000;
 }
 
@@ -89,8 +91,37 @@ h1 {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   color: #fff;
   background-color: #000;;
+}
+
+.wrapper ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+ list-style: none;
+}
+
+#team-members {
+  background-color:#6647A6 ;
+  display: flex;
+  flex-basis: 50%;
+  align-content: space-between;
+}
+
+.profiles img {
+  width: 150px;
+  margin-top: 1em;
+  border-radius: 50%;
+  border-style: none;
+  filter: grayscale(100%);
+}
+
+.profiles h3 {
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
 }
